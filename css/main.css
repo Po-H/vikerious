@@ -99,7 +99,8 @@ footer {
 	display: flex;
 	justify-content: center;
 	align-items: center;
-	flex-flow: row wrap;
+  flex-flow: row wrap;
+	
 }
 
 /* Header Styles */
@@ -120,26 +121,27 @@ header .content-wrapper {
   width: 100%;
   height: 1px;
   margin: 10px 0 20px 0;
+  border-top: 3px solid #866464;
 }
 
 header nav {
 	display: flex;
-	justify-content: space-around;
-	align-items: center;
-	flex-flow: row wrap;
-  width: 60%;
+	width: 60%;
 }
 
 header nav ul {
 	display: flex;
-	justify-content: space-around;
-  width: 100%;
+  justify-content: space-around;
+  width: 60%;
 }
+
 
 /* Footer Styles */
 
 footer {
   flex-direction: column;
+  text-align: center;
+
 }
 
 footer .content-wrapper {
@@ -222,7 +224,7 @@ aside h3 {
 }
 
 .inspirations article {
-  width: 63%;
+  width: 65%;
   margin: 30px 0;
 }
 
@@ -260,9 +262,7 @@ aside h3 {
 	align-items: center;
 	flex-flow: row wrap;
 }
-.contact-content p {
-  margin: 0;
-}
+
 
 /* ==========================================================================
    FAQ Page
@@ -277,18 +277,20 @@ aside h3 {
 
 .faq .content-wrapper {
   display: flex;
-  justify-content: center;
+  justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
   margin: 50px 0 0 0;
 }
 
 .faq h2 {
-  margin-bottom: 40px;
+  margin: 0;
+
 }
 
-.faq-content {
-  margin-bottom: 50px;
+.faq-content h4,
+.faq-content p {
+  margin-left: 0;
 }
 
 /*--------------- Mobile Styles - About ----------*/
@@ -381,16 +383,171 @@ aside h3 {
    Modify as content requires.
    ========================================================================== */
 
-@media only screen and (min-width: 35em) {
-  /* Style adjustments for viewports that meet the condition */
+@media only screen and (min-width: 768px) {
+  /*Tablet styles here*/
+    /* General styles */
+      .content-wrapper {
+        max-width: 640px;
+      }
+
+      /* Header */
+      header {
+        justify-content: center;
+    
+      }
+
+      header .content-wrapper {
+        width: 640px;
+        flex-flow: row nowrap;
+        justify-content: space-between;
+
+      }
+
+      header nav {
+        justify-content: flex-end;
+      }
+
+      header nav ul {
+        width: 300px;
+        justify-content: space-around;
+      }
+
+      .header-divider {
+        display: none;
+      }
+
+      aside .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        flex-flow: row nowrap;
+      }
+
+      .form-description {
+          width: 257px;
+      }
+
+      .form {
+          width: 290px;
+      }
+
+     section .inspirations {
+        display: flex;
+        flex-flow: row wrap;
+     }
+
+      .inspirations-items article {
+        width: 310px;
+        display: flex;
+        flex-flow: row wrap;
+        justify-content: space-around;
+        align-items: center;
+      }
+
+      .inspirations article {
+        width: 90%;
+      }
+      .houses {
+        flex-basis: 50%;
+      }
+      .birds {
+        flex-basis: 50%;
+      }
+      .shore {
+        flex-basis: 50%;
+      }
+      .mountains {
+        flex-basis: 50%;
+      }
+
+      article p {
+        width: 200px;
+      }
+
+      .reviews h2 {
+        margin-bottom: 0;
+      }
+      .interview {
+        display: flex;
+        flex-flow: row nowrap;
+        align-items: center;
+      }
+
+      .kxonelaguna {
+        padding-left: 20px;
+        display: flex;
+        flex-flow: row wrap;
+      
+      }
+      .kxonelaguna h3 {
+        margin-bottom: 0;
+      }
+
+      .footer-content {
+        display: flex;
+        flex-flow: row nowrap;
+        justify-content: space-around;
+      } 
+
+      address {
+      	text-align: center;
+      }
+
+/* ==========================================================================
+    About Page
+  =========================================================================== */
+  
+      .intention-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+ 
+      .intention-content p {
+        width: 45%;
+      }
+
+      .contact-content {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+ 
+      .contact-content h2,
+      .contact-content p {
+        width: 45%;
+      }
+
+/* ==========================================================================
+    Faq Page
+  =========================================================================== */
+
+      .faq-content {
+        flex-basis: 40%;
+
+      }
+
+      .faq h2 {
+        width: 100%;
+      }
+
+      
+
+      .faq .content-wrapper {
+        display: flex;
+        justify-content: space-between;
+        align-items: flex-start;
+      }
+
+ 
 }
 
-@media print,
-  (-webkit-min-device-pixel-ratio: 1.25),
-  (min-resolution: 1.25dppx),
-  (min-resolution: 120dpi) {
-  /* Style adjustments for high resolution devices */
+
+@media only screen and (min-width: 1200px) {
+  /*Desktop styles here*/
+      
+      }
 }
+
 
 /* ==========================================================================
    Print styles.
