@@ -257,6 +257,11 @@ footer .social-icons {
 	align-items: center;
 }
 
+.social-icons i {
+  font-size: 2em;
+  color: lightblue;
+}
+
 .contact a {
   color: #EFE5C8;
 }
@@ -823,7 +828,7 @@ figure img#clock {
       	text-align: center;
       }
 
-      .social-icons img {
+      .social-icons i {
         margin-left: 20px;
         margin-right: 20px;
       }
