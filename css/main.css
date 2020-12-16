@@ -485,7 +485,7 @@ figure img#writer {
 .contact-info img {
   border: none;
   width: 100%;
-  margin-top: 15px; 
+  margin-top: -40px; 
   margin-left: -50px;
 }
 
@@ -876,6 +876,10 @@ figure img#clock {
       .email-subject img {
         margin: 0 0;
       }
+
+      .map figure {
+        padding-bottom: 50%;
+      }
       
 /* ==========================================================================
     Faq Page
@@ -1034,6 +1038,10 @@ figure img#clock {
 
       .email-subject img {
         width: 50%;
+      }
+
+      .map figure {
+        padding-bottom: 30%;
       }
 
 /* ==========================================================================
