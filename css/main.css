@@ -117,6 +117,14 @@ textarea {
   margin: 50px 0;
 }
 
+img { 
+  width: 100%;
+}
+ 
+figure {
+        margin: 0;
+}
+
 html {
   font-size: 16px;
 }
@@ -191,6 +199,10 @@ header .content-wrapper {
   margin: 0;
 }
 
+header figure {
+  width: 50%;
+}
+
 .header-divider {
   width: 100%;
   height: 1px;
@@ -249,6 +261,12 @@ footer .social-icons {
   color: #EFE5C8;
 }
 
+.copyright p {
+  font-size: 1em;
+  color: #3abeff;
+  margin-bottom: 20px;
+}
+
 /*--------------- Mobile Styles - Homepage ----------*/
 
 /* Hero Area */
@@ -288,7 +306,7 @@ aside {
 }
 
 .form-description p {
-margin-top: 0;
+  margin-top: 0;
 }
 
 /* Inspirations */
@@ -333,10 +351,32 @@ margin-top: 0;
 
 .houses p {
   margin-top: 8px;
+  margin-bottom: -20px;
 }
 
 .birds p, .mountains p {
-  margin-top: 30px;
+  margin-top: 15px;
+  margin-bottom: -40px;
+}
+
+.water p {
+  margin-top: -10px;
+}
+
+figure img#house {
+  width: 60%;
+}
+
+figure img#bird {
+  width: 70%;
+}
+
+figure img#water {
+  width: 95%;
+}
+
+figure img#mountains {
+  width: 50%;
 }
 
 /* Reviews */
@@ -353,7 +393,12 @@ margin-top: 0;
 }
 
 .reviews h2 {
-  margin-bottom: 40px;
+  margin-bottom: 30px;
+  margin-top: 10px;
+}
+
+figure img#kxone {
+  width: 60%;
 }
 
 .reviews h3 {
@@ -361,6 +406,16 @@ margin-top: 0;
 	font-size: 1.5em;
   width: 100%;
   margin: 20px 0;
+}
+
+.kxonelaguna a {
+  font-size: 1.5em;
+  font-style: italic;
+  color: #3abeff;
+} 
+
+.kxonelaguna {
+  margin-bottom: -10px;
 }
 
 /* ==========================================================================
@@ -412,7 +467,7 @@ margin-top: 0;
   margin-bottom: 30px;
 }
 
-.contact-section img {
+figure img#writer {
 	width: 93%;
   border: black double 20px;
 }
@@ -430,7 +485,7 @@ margin-top: 0;
 .contact-info img {
   border: none;
   width: 100%;
-  margin-top: -40px; 
+  margin-top: 15px; 
   margin-left: -50px;
 }
 
@@ -497,7 +552,7 @@ margin-top: 0;
   text-align: center;
 }
 
-.clock-section img {
+figure img#clock {
   width: 30%;
   margin-top: 50px;
   margin-bottom: 40px;
@@ -606,9 +661,13 @@ margin-top: 0;
       }
 
       header .content-wrapper {
-        width: 640px;
+        width: 100%;
         flex-flow: row nowrap;
         justify-content: space-between;
+      }
+
+      header figure {
+        width: 40%;
       }
 
       header nav {
@@ -616,7 +675,7 @@ margin-top: 0;
       }
 
       header nav ul {
-        width: 300px;
+        width: 47%;
         justify-content: space-around;
       }
 
@@ -647,7 +706,7 @@ margin-top: 0;
 
       .form {
           width: 45%;
-          margin-top: 50px;
+          margin-top: 40px;
       }
 
       .form h3 {
@@ -661,7 +720,7 @@ margin-top: 0;
       }
 
       .inspirations-items article {
-        width: 310px;
+        width: 48%;
         display: flex;
         flex-flow: row wrap;
         justify-content: space-around;
@@ -679,16 +738,63 @@ margin-top: 0;
         flex-basis: 50%;
       }
 
-      .mountains img {
-        margin-top: 62px;
+      article p {
+        width: 70%;
       }
 
-      article p {
-        width: 200px;
+      .houses p {
+        margin-top: 0px;
+        margin-bottom: -30px;
+      }
+
+      .birds p {
+        margin-top: 18px;
+        margin-bottom: 0px;
+      }
+
+      .mountains p {
+        margin-top: 18px;
+        margin-bottom: -70px;
+      }
+
+      .water p {
+        margin-top: -10px;
+        margin-bottom: -70px;
+      }
+
+      figure img#house {
+        margin-top: -40px;
+        margin-bottom: 5px;
+        width: 75%;
+      }
+
+      figure img#bird {
+        margin-bottom: -5px;
+        width: 75%;
+      }
+
+      figure img#water {
+        margin-top: -30px;
+        width: 80%;
+      }
+
+      figure img#mountains {
+        margin-top: 5px;
+        width: 70%;
+      }
+
+      .reviews h2 {
+        margin-bottom: 30px;
+        margin-top: 20px;
+      }
+
+      figure img#kxone {
+        width: 40%;
       }
 
       footer .content-wrapper {
         margin-bottom: 10px;
+        width: 100%;
       }
 
       .footer-content {
@@ -721,9 +827,9 @@ margin-top: 0;
         width: 45%;
       }
 
-      .contact-section img {
-		    width: 95%;
-	    }
+      figure img#writer {
+        width: 95%;
+      }
 
       .contact-content {
         display: flex;
@@ -792,7 +898,7 @@ margin-top: 0;
         margin-top: 5px;
       }
 
-      .clock-section img {
+      figure img#clock {
         width: 20%;
       }
 
@@ -803,15 +909,81 @@ margin-top: 0;
        		max-width: 960px;
       }
 
+      header .content-wrapper {
+        width: 100%;
+      }
+
+      header figure {
+        width: 30%;
+      }
+
+      .form {
+        margin-bottom: 20px;
+      }
+
       .inspirations-items {
-        width: 100%
+        width: 100%;
       }
 
       .houses,
       .birds,
       .water,
       .mountains {
-        flex-basis: 20%;
+        flex-basis: 25%;
+      }
+
+      article p {
+        width: 90%;
+      }
+
+      .inspirations-items {
+        margin-bottom: -40px;
+      }
+
+      .houses p {
+        margin-top: 8px;
+        margin-bottom: -30px;
+      }
+
+      .birds p {
+        margin-top: 18px;
+        margin-bottom: 0px;
+      }
+
+      .mountains p {
+        margin-top: 18px;
+        margin-bottom: -70px;
+      }
+
+      .water p {
+        margin-top: -20px;
+        margin-bottom: -70px;
+      }
+
+      figure img#house {
+        margin-top: 10px;
+        margin-bottom: 0px;
+        width: 70%;
+      }
+
+      figure img#bird {
+        margin-bottom: 0px;
+        width: 80%;
+      }
+
+      figure img#water {
+        margin-top: -60px;
+        margin-bottom: 10px;
+        width: 100%;
+      }
+
+      figure img#mountains {
+        margin-top: -20px;
+        width: 65%;
+      }
+
+      figure img#kxone {
+        width: 30%;
       }
 
 /* ==========================================================================
@@ -824,15 +996,15 @@ margin-top: 0;
         margin: 10px 0 20px 0;
       }
 
-      .contact-section img {
-        width: 50%;
+      figure img#writer {
+        width: 93%;
       }
 
       .contact-content {
         display: flex;
         flex-flow: row wrap;
         margin-left: 60px;
-        width: 100%;
+        width: 58%;
       }
 
       .request  {
@@ -844,10 +1016,14 @@ margin-top: 0;
         margin-top: 0;
       }
 
+      .email-subject img {
+        width: 50%;
+      }
+
 /* ==========================================================================
     Faq Page
   =========================================================================== */
-      .clock-section img {
+      figure img#clock {
         width: 15%;
       }
 }
