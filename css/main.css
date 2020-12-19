@@ -122,7 +122,7 @@ img {
 }
  
 figure {
-        margin: 0;
+  margin: 0;
 }
 
 html {
@@ -136,12 +136,12 @@ body {
  
 ul, 
 ol {
- list-style-type: none;
+  list-style-type: none;
 }
  
 a {
   color: black;
-     text-decoration: none;
+  text-decoration: none;
 }
 
 h1 {
@@ -168,7 +168,7 @@ p {
 }
  
 address {
- font-style: normal;
+  font-style: normal;
 }
  
 
@@ -176,9 +176,9 @@ address {
 
 header, 
 footer {
-	display: flex;
-	justify-content: center;
-	align-items: center;
+  display: flex;
+  justify-content: center;
+  align-items: center;
   flex-flow: row wrap;
 }
 
@@ -192,10 +192,10 @@ header {
 }
 
 header .content-wrapper {
-	display: flex;
-	justify-content: center;
-	align-items: center;
-	flex-flow: row wrap;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-flow: row wrap;
   margin: 0;
 }
 
@@ -212,17 +212,18 @@ header figure {
 
 header nav {
 	display: flex;
-	width: 60%;
-  justify-content: center;
+	width: 100%;
+  	justify-content: center;
 }
 
 header nav ul {
 	font-family: 'Smythe', cursive;
-  font-size: 1.875em;
-  text-transform: uppercase;
+  	font-size: 1.875em;
+  	text-transform: uppercase;
 	display: flex;
-  justify-content: space-between;
-  width: 60%;
+  	justify-content: space-around;
+  	width: 100%;
+  	padding-left: 0;
 }
 
 /* Footer Styles */
@@ -230,12 +231,12 @@ header nav ul {
 footer {
 	background-color: #2f2719;
 	color: #EFE5C8;
-  flex-direction: column;
-  text-align: center;
+  	flex-direction: column;
+  	text-align: center;
 }
 
 footer .content-wrapper {
-  width: 55%;
+  width: 100%;
   margin-top: 20px;
 }
 
@@ -289,6 +290,7 @@ footer .social-icons {
 
 .hero-area h1 {
  text-align: center;
+ margin-top: 0;
 }
 
 /* Aside */
@@ -366,6 +368,10 @@ aside {
 
 .water p {
   margin-top: -10px;
+}
+
+.mountains p {
+  margin-bottom: -65px;
 }
 
 figure img#house {
@@ -489,9 +495,10 @@ figure img#writer {
 
 .contact-info img {
   border: none;
-  width: 100%;
-  margin-top: -40px; 
-  margin-left: -50px;
+  width: 50%;
+  margin-top: -20px;
+  margin-bottom: 20px; 
+  margin-left: 0px;
 }
 
 .contact-info p {
@@ -505,7 +512,7 @@ figure img#writer {
 
 .email-subject {
   display: flex;
-  flex-flow: row nowrap;
+  flex-flow: row wrap;
 }
 
 .map figure {
@@ -544,7 +551,7 @@ figure img#writer {
   justify-content: flex-start;
   align-items: center;
   flex-flow: row wrap;
-  margin: 50px 0 30px 0;
+  margin: 20px 0 10px 0;
   padding: 20px;
 }
 
@@ -574,7 +581,7 @@ figure img#writer {
 }
 
 figure img#clock {
-  width: 30%;
+  width: 50%;
   margin-top: 50px;
   margin-bottom: 40px;
 }
@@ -880,6 +887,7 @@ figure img#clock {
 
       .email-subject img {
         margin: 0 0;
+        width: 100%;
       }
 
       .map figure {
@@ -924,7 +932,7 @@ figure img#clock {
       }
 
       figure img#clock {
-        width: 20%;
+        width: 30%;
       }
 
 @media only screen and (min-width: 1200px) {
@@ -1043,6 +1051,7 @@ figure img#clock {
 
       .email-subject img {
         width: 50%;
+        margin-bottom: 30px;
       }
 
       .map figure {
